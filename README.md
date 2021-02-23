@@ -1,7 +1,9 @@
 # Material UI
-# Styled-Components - https://styled-components.com/ - npm install --save styled-components -   "resolutions": {
-    "styled-components": "^5"
-  }
+# Styled-Components 
+    - https://styled-components.com/ - npm install --save styled-components 
+    -   "resolutions": {
+        "styled-components": "^5"
+        }
 # ReactJS
 # Redux
 # MySQL

@@ -9,7 +9,7 @@ function Login() {
           <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
           alt=''/> 
           <h2>Good Neighbor,</h2><br/>
-          <p>is a volunteer-based community where neighbors help neighbors in need.<br/>Please note that due to limited resources, we are only able to serve East Boston 02128 at this time.</p><br/>
+          <p>is a volunteer-based community where neighbors help neighbors in need.<br/>Please note that due to limited resources, we are only able to serve <strong>East Boston</strong> at this time.</p><br/>
           <h4>eastie.goodneighbor</h4>
           <Button onClick=''>
             Sign in

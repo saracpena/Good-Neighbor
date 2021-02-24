@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import React from 'react'
 import styled from 'styled-components'
 
@@ -7,6 +8,11 @@ function Login() {
         <LoginInnerContainer>
           <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
           alt=''/> 
+          <h1>Sign in to Good Neighbor</h1>
+          <p>eastie.goodneighbor</p>
+          <Button type='submit' onClick=''>
+            Sign in with Google
+          </Button>
         </LoginInnerContainer>  
       </LoginContainer>
     )

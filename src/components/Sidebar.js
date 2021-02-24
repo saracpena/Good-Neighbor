@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 //! Material Ui
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
@@ -10,6 +11,7 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import AppsIcon from '@material-ui/icons/Apps';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
+import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
@@ -31,14 +33,20 @@ function Sidebar() {
                 </SidebarInfo>
                 <CreateIcon />
             </SidebarHeader>
-
+            <NavLink to='/inbox'>
             <SidebarOption Icon={InsertCommentIcon} title="Inbox"/>
+            </NavLink>
+            <NavLink to='/Mentions_&_Reactions'>
             <SidebarOption Icon={InboxIcon} title="Mentions & Reactions"/>
+            </NavLink>
             {/* <SidebarOption Icon={DraftsIcon} title="Saved Items"/> */}
+            <NavLink to='/Saved_items'>
             <SidebarOption Icon={BookmarkBorderIcon} title="Saved Items"/>
+            </NavLink>
             <SidebarOption Icon={PeopleAltIcon} title="People & User Groups"/>
-            <SidebarOption Icon={AppsIcon} title="Apps"/>
+            {/* <SidebarOption Icon={AppsIcon} title="Apps"/> */}
             {/* <SidebarOption Icon={FileCopyIcon} title="File Browser"/> */}
+            <SidebarOption Icon={FeedbackOutlinedIcon} title="Disclaimer"/>
             <SidebarOption Icon={ExpandLessIcon} title="Show Less"/>
             <hr />
             <SidebarOption Icon={ExpandMoreIcon} title="Categories"/>
@@ -69,6 +77,9 @@ const SidebarContainer = styled.div`
         border: 1px solid #946000;
     }
 
+    > NavLink {
+        text-decoration: none;
+    }
 `;
 
 const SidebarHeader = styled.div`

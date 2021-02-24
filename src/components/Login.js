@@ -8,11 +8,14 @@ function Login() {
         <LoginInnerContainer>
           <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
           alt=''/> 
-          <h2>Sign in to Good Neighbor, Eastie</h2>
-          <p>eastie.goodneighbor</p>
+          <h2>Good Neighbor,</h2><br/>
+          <p>is a volunteer-based community where neighbors help neighbors in need.<br/>Please note that due to limited resources, we are only able to serve East Boston 02128 at this time.</p><br/>
+          <h4>eastie.goodneighbor</h4>
           <Button onClick=''>
-            Sign in with Google
+            Sign in
           </Button>
+          <hr/>
+          <p>Not a member? Sign-up.</p>
         </LoginInnerContainer>  
       </LoginContainer>
     )
@@ -27,7 +30,7 @@ const LoginContainer = styled.div`
     place-items: center;
 `;
 const LoginInnerContainer = styled.div`
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -35,13 +38,19 @@ const LoginInnerContainer = styled.div`
 
     > img {
         object-fit:contain;
-        height: 175px;
+        height: 180px;
         margin-bottom: 40px;
     }
     > button {
         margin-top: 50px;
         text-transform: inherit !important;
-        background-color: orange;
+        background-color: #db8f00;
         color: white;
     }
+
+    > hr {
+        margin-top: 20px;
+        margin-bottom: 20px;   
+    }
+   
 `;

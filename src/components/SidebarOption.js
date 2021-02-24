@@ -33,7 +33,7 @@ const SidebarOptionContainer = styled.div`
 
     :hover{
         opactiy: 0.9;
-        background-color: #340e36;
+        background-color: #b37400;
     }
 
     > h3 {
@@ -47,5 +47,5 @@ const SidebarOptionContainer = styled.div`
 const SidebarOptionChannel = styled.h3`
     padding: 10px 0;
     font-weight: 300;
-    
+
 `;

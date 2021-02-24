@@ -8,9 +8,9 @@ function Login() {
         <LoginInnerContainer>
           <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
           alt=''/> 
-          <h1>Sign in to Eastie's Good Neighbor</h1>
+          <h2>Sign in to Good Neighbor, Eastie</h2>
           <p>eastie.goodneighbor</p>
-          <Button type='submit' onClick=''>
+          <Button onClick=''>
             Sign in with Google
           </Button>
         </LoginInnerContainer>  

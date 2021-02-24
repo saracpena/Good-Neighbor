@@ -13,7 +13,7 @@ function ChatInput() {
     return (
        <ChatInputContainer>
            <form>
-               <input placeholder="direct message" />
+               <input placeholder="Post a need or share a resource" />
                <Button hidden type ='submit' onClick={sendMessage}>
                    SEND
                </Button>
@@ -37,7 +37,7 @@ const ChatInputContainer = styled.div`
         position: fixed;
         bottom: 30px;
         width: 60%;
-        border: 1px solid #49274b;
+        border: 1px solid #946000;
         border-radius: 3px;
         padding: 20px;
         outline: none;

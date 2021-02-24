@@ -10,7 +10,7 @@ function Header() {
         <HeaderContainer>
             <HeaderLeft>
               <HeaderAvatar
-              //TODO: Add onClick   
+              displayName  
               />
               <AccessTimeIcon />
             </HeaderLeft>
@@ -32,7 +32,8 @@ const HeaderSearch = styled.div`
     flex: 0.4;
     opacity: 1;
     border-radius: 6px;
-    background-color: #421f44;
+    /* background-color: #421f44; */
+    background-color: #ffad14;
     text-align: center;
     display: flex;
     padding: 0 50px;
@@ -44,7 +45,7 @@ const HeaderSearch = styled.div`
         text-align: center;
         min-width: 30vw;
         outline: none;
-        color: white;
+        color: #faebd7;
     }
 `;
 
@@ -55,8 +56,9 @@ const HeaderContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    background-color: var(--slack-color);
-    color: white;
+    /* background-color: var(--slack-color); */
+    background-color: #db8f00;
+    color: #faebd7;
 `;
 
 const HeaderLeft = styled.div` //h2
@@ -76,6 +78,9 @@ const HeaderRight = styled.div`
     display: flex;
     align-items: flex-end;
     
+    :hover{
+        color: red;
+    }
 
     > .MuiSvgIcon-root {
         margin-left: auto;

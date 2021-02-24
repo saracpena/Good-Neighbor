@@ -11,8 +11,9 @@ function App() {
   
   return (
     <div className="app">
-      <Login/>
+      
       <Router>
+        {/* <Login/> */}
           <>
         <Header />
         <AppBody>

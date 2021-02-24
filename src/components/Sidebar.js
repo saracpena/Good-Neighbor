@@ -108,5 +108,5 @@ const SidebarInfo = styled.div`
 
 const SidebarFooter = styled.div`
     
-    background-image: url('https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg');
+    background-image: url('');
 `;

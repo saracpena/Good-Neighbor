@@ -44,7 +44,10 @@ function Sidebar() {
             <SidebarOption Icon={ExpandMoreIcon} title="Categories"/>
             <hr />
             <SidebarOption Icon={AddIcon} addChannelOption title="Add Categories"/>
-        
+            <SidebarFooter>
+            <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
+            alt=''/> 
+            </SidebarFooter>
         </SidebarContainer>
     )
 }
@@ -104,3 +107,12 @@ const SidebarInfo = styled.div`
     }
 `;
 
+const SidebarFooter = styled.div`
+
+    > img {
+        object-fit: contain;
+        margin-top: 110px;
+        height: 210px;
+    }
+
+`;

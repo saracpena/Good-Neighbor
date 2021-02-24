@@ -112,7 +112,7 @@ const SidebarFooter = styled.div`
     > img {
         object-fit: contain;
         margin-top: 110px;
-        height: 210px;
+        height: 230px;
     }
 
 `;

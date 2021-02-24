@@ -44,6 +44,8 @@ const SidebarOptionContainer = styled.div`
         padding: 15px;
     }
 `;
-const SidebarOptionChannel = styled.div`
-
+const SidebarOptionChannel = styled.h3`
+    padding: 10px 0;
+    font-weight: 300;
+    
 `;

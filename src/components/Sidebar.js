@@ -55,6 +55,7 @@ export default Sidebar
 
 const SidebarContainer = styled.div`
     background-color: var(--slack-color);
+    background-color: var(--slack-color);
     color: white;
     flex: 0.3;
     border-top: 1px solid #49274b;
@@ -72,12 +73,12 @@ const SidebarContainer = styled.div`
 const SidebarHeader = styled.div`
     display: flex;
     border-bottom: 1px solid #49274b;
-    padding-bottom: 10px;
-    padding: 13px;
+    padding-bottom: 20px;
+    padding: 12px;
 
     > .MuiSvgIcon-root {
       padding: 8px;
-      color: #49274b;
+      color: royalblue;
       font-size: 18px;
       background-color: white;
       border-radius: 999px;

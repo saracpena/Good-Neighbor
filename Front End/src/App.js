@@ -7,12 +7,13 @@ import styled from 'styled-components'
 import Chat from './components/Chat';
 import Login from './components/Login';
 import Disclaimer from './components/Disclaimer'
+import Test from './components/Test.js'
 
 function App() {
   
   return (
     <div className="app">
-      
+      {/* <Test/> */}
       <Router>
         {/* <Login/> */}
           <>

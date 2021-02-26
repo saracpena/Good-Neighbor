@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import styled from 'styled-components'
 import Chat from './components/Chat';
 import Login from './components/Login';
+import Disclaimer from './components/Disclaimer';
 
 function App() {
   
@@ -21,6 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Chat/>
+          </Route>
+          <Route exact path="/disclaimer">
+            <Disclaimer/>
           </Route>
         </Switch>
         </AppBody>

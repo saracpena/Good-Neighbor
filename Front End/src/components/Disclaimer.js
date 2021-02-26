@@ -181,7 +181,7 @@ export default Disclaimer;
 
 const DisclaimerContainer = styled.div`
     flex: 0.7;
-    flex-grow: 12;
+    flex-grow: 2;
     overflow-y: scroll;
     margin-top: 60px;
 `;

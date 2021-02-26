@@ -110,12 +110,12 @@ const SidebarInfo = styled.div`
         font-size: 15px;
         font-weight: 900;
         margin-bottom: 5px;
-        color: rgba(223,106,47,255);
+        color: #FF851B;
     }
 
     > h2:hover{
         opactiy: 0.9;
-        color: rgba(242,158,86,255);//#b37400 golden rod
+        color: #FF4136;//#b37400 golden rod
     }
 
     >h3{

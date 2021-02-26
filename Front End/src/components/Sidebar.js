@@ -48,15 +48,20 @@ function Sidebar() {
             </StyledLink>
             {/* <SidebarOption Icon={AppsIcon} title="Apps"/> */}
             {/* <SidebarOption Icon={FileCopyIcon} title="File Browser"/> */}
-            <StyledLink to='/Disclaimer'>
+            <StyledLink to='/disclaimer'>
             <SidebarOption Icon={FeedbackOutlinedIcon} title="Disclaimer"/>
             </StyledLink>
+            <StyledLink to='/show_less'>
             <SidebarOption Icon={ExpandLessIcon} title="Show Less"/>
+            </StyledLink>
             <hr />
+            <StyledLink to='/categories'>
             <SidebarOption Icon={ExpandMoreIcon} title="Categories"/>
+            </StyledLink>
             <hr />
+            <StyledLink to='/add_categories'>
             <SidebarOption Icon={AddIcon} addChannelOption title="Add Categories"/>
-            
+            </StyledLink>
             <SidebarFooter>
             <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
             alt=''/> 
@@ -71,7 +76,7 @@ const SidebarContainer = styled.div`
     /* background-color: var(--slack-color); */
     background-color: #001f3f; //#db8f00-goldenrod
     color: #7FDBFF;//! use this for input color 
-    flex: 0.3;
+    flex: 0.1;//was at .3 , lost 20%
     border-top: 1px solid #946000;
     max-width: 260px;
     margin-top: 60px;
@@ -93,7 +98,7 @@ const SidebarHeader = styled.div`
       padding: 8px;
       color: #0074D9;//pencil color
       font-size: 18px;
-      background-color: white; //pencil icon color
+      background-color: rgb(204,231,232); //pencil icon color
       border-radius: 999px;
   }
 `;
@@ -105,6 +110,7 @@ const SidebarInfo = styled.div`
         font-size: 15px;
         font-weight: 900;
         margin-bottom: 5px;
+        color: #FF851B;
     }
     >h3{
         display: flex;
@@ -116,7 +122,7 @@ const SidebarInfo = styled.div`
         font-size: 14px;
         margin-top: 1px;
         margin-right: 2px;
-        color: #01FF70;  
+        color: #01FF70;  //!active color
     }
 `;
 
@@ -125,15 +131,16 @@ const SidebarFooter = styled.div`
     > img {
         object-fit: contain;
         margin-top: 140px;
+        margin-left: 0;
         height: 190px;
     }
 
 `;
 
 const StyledLink = styled(NavLink)`
-  color:#7FDBFF;
+  color:rgb(204,231,232);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
 `;
 
 //! How to CSS the NavLink/Link from react-router-dom

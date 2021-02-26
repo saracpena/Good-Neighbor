@@ -99,7 +99,7 @@ export default Header;
 
 // Using Styled Components
 const HeaderSearch = styled.div`
-  flex: 0.4;
+  flex: 0.6;//!was 0.4 added 0.2 = 0.6
   opacity: 1;
   border-radius: 6px;
   /* background-color: #421f44; */
@@ -127,8 +127,8 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   padding: 10px 0;
   /* background-color: var(--slack-color); */
-  background-color: #001f3f;//#db8f00
-  color: #7FDBFF;//#faebd7
+  background-color: #001f3f;//#db8f00 header background
+  color: rgb(204,231,232);//#faebd7 or #7FDBFF
 `;
 
 const HeaderLeft = styled.div`

@@ -54,6 +54,7 @@ function Sidebar() {
             <SidebarOption Icon={ExpandMoreIcon} title="Categories"/>
             <hr />
             <SidebarOption Icon={AddIcon} addChannelOption title="Add Categories"/>
+            
             <SidebarFooter>
             <img src='https://i.pinimg.com/originals/d8/7d/65/d87d6554f3a8df4fa7092d130c8aa5e7.jpg'
             alt=''/> 
@@ -78,10 +79,6 @@ const SidebarContainer = styled.div`
         margin-bottom: 10px;
         border: 1px solid #946000;
     }
-
-    > NavLink {
-        text-decoration: none;
-    }
 `;
 
 const SidebarHeader = styled.div`
@@ -98,6 +95,7 @@ const SidebarHeader = styled.div`
       border-radius: 999px;
   }
 `;
+
 const SidebarInfo = styled.div`
     flex: 1;
 
@@ -124,8 +122,8 @@ const SidebarFooter = styled.div`
 
     > img {
         object-fit: contain;
-        margin-top: 110px;
-        height: 230px;
+        margin-top: 140px;
+        height: 190px;
     }
 
 `;

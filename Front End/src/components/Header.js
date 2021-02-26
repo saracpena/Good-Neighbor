@@ -22,31 +22,51 @@ function Header() {
     const cors = "https://cors-demo.glitch.me/allow-cors";
     if (e.key === "Enter") {
 
-       fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})
+      const options = {
+        method: 'GET',
+        url: 'https://craigslist-search.p.rapidapi.com/q=&city&zipcode&miles',
+        params: {
+          city: 'Boston',
+          q: 'Free, FREE, Donation, Volunteer,',
+          miles: '1',
+          zipcode: '02128'
+        },
+        headers: {
+          'x-rapidapi-key': 'a3cfdb2522msh052ed764ce567ccp1b4364jsn052605a8e30d',
+          'x-rapidapi-host': 'craigslist-search.p.rapidapi.com'
+        }
+      };
+      
+      axios.request(options).then(function (response) {
+        console.log(response.data);
+      }).catch(function (error) {
+        console.error(error);
+      });
+      //  fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})
 
-        const fetchAPI = () => {
-            axios
-              .get('https://offerup.com/api/search/v4/feed?limit=100&is_shippable_only=true&q=widget')
-              .then((res) => {
-                const newData = [];
+      //   const fetchAPI = () => {
+      //       axios
+      //         .get('https://offerup.com/api/search/v4/feed?limit=100&is_shippable_only=true&q=widget')
+      //         .then((res) => {
+      //           const newData = [];
         
-                for (let i = 0; i < res.data.length; i++) {
-                  newData.push(
-                    createData(
-                      res.data[i].charityName,
-                      res.data[i].websiteURL,
-                      res.data[i].mailingAddress.city,
-                      res.data[i].irsClassification.deductibility,
-                      'Active'
-                    )
-                  );
-                }
-                updateTableRow([...newData]);
-                console.log(res.data);
-              })
-              .catch(error => console.log(error))
-          };
-          fetchAPI();
+      //           for (let i = 0; i < res.data.length; i++) {
+      //             newData.push(
+      //               createData(
+      //                 res.data[i].charityName,
+      //                 res.data[i].websiteURL,
+      //                 res.data[i].mailingAddress.city,
+      //                 res.data[i].irsClassification.deductibility,
+      //                 'Active'
+      //               )
+      //             );
+      //           }
+      //           updateTableRow([...newData]);
+      //           console.log(res.data);
+      //         })
+      //         .catch(error => console.log(error))
+      //     };
+      //     fetchAPI();
     }
   };
 

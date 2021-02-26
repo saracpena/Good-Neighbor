@@ -1,14 +1,33 @@
 import React from 'react'
 import styled from "styled-components" 
 
-function SidebarOption({ Icon, title, addChannelOption }) {
-    const addChannel = () => {};
+function SidebarOption({ Icon, title, addCategoryOption, id }) {
+    //TODO: Must add backend for following functionality
+    const addCategory = () => {
+        const categoryName = prompt('Please enter category name');
+        if(categoryName){
+    //! must grab category info here
+        //db.collection('categories').add({
+        // name: categoryName,
+        // });
+        }
+    };
+    const selectedCategory = () => {
+    //! 
+        // if(id) {
+        //   dispatch(
+        //       enterCategory({
+        //           categoryId: id,
+        //       })
+        //   ); 
+        // }
+    };
 
-    const selectedChannel = () => {};
+
 
     return (
         <SidebarOptionContainer
-            onClick={addChannelOption ? addChannel : selectedChannel}
+            onClick={addCategoryOption ? addCategory : selectedCategory}
         >
            {Icon && <Icon fontSize='small' style={{ padding: 10 }} />}  
            {Icon ? (

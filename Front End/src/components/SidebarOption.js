@@ -52,7 +52,7 @@ const SidebarOptionContainer = styled.div`
 
     :hover{
         opactiy: 0.9;
-        background-color: #b37400;
+        background-color: #0074D9;//#b37400 golden rod
     }
 
     > h3 {

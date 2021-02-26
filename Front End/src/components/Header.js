@@ -103,11 +103,11 @@ const HeaderSearch = styled.div`
   opacity: 1;
   border-radius: 6px;
   /* background-color: #421f44; */
-  background-color: #ffad14;
+  background-color: rgb(21,76,121);//!input background color
   text-align: center;
   display: flex;
   padding: 0 50px;
-  border: 1px solid gray;
+  border: 1px solid #0074D9;
 
   > input {
     background-color: transparent;
@@ -115,7 +115,7 @@ const HeaderSearch = styled.div`
     text-align: center;
     min-width: 30vw;
     outline: none;
-    color: #faebd7;
+    color: #7FDBFF;//#faebd7
   }
 `;
 
@@ -127,8 +127,8 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   padding: 10px 0;
   /* background-color: var(--slack-color); */
-  background-color: #db8f00;
-  color: #faebd7;
+  background-color: #001f3f;//#db8f00
+  color: #7FDBFF;//#faebd7
 `;
 
 const HeaderLeft = styled.div`

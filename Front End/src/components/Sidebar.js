@@ -69,8 +69,8 @@ export default Sidebar
 
 const SidebarContainer = styled.div`
     /* background-color: var(--slack-color); */
-    background-color: #db8f00;
-    color: white;
+    background-color: #001f3f; //#db8f00-goldenrod
+    color: #7FDBFF;//! use this for input color 
     flex: 0.3;
     border-top: 1px solid #946000;
     max-width: 260px;
@@ -91,9 +91,9 @@ const SidebarHeader = styled.div`
 
     > .MuiSvgIcon-root {
       padding: 8px;
-      color: #0000db;
+      color: #0074D9;//pencil color
       font-size: 18px;
-      background-color: white;
+      background-color: white; //pencil icon color
       border-radius: 999px;
   }
 `;
@@ -116,7 +116,7 @@ const SidebarInfo = styled.div`
         font-size: 14px;
         margin-top: 1px;
         margin-right: 2px;
-        color: green;  
+        color: #01FF70;  
     }
 `;
 
@@ -131,7 +131,7 @@ const SidebarFooter = styled.div`
 `;
 
 const StyledLink = styled(NavLink)`
-  color: white;
+  color:#7FDBFF;
   text-decoration: none;
   font-weight: bold;
 `;

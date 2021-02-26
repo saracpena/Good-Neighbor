@@ -135,3 +135,18 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-weight: bold;
 `;
+
+//! How to CSS the NavLink/Link from react-router-dom
+
+// const StyledLink = styled(Link)` or (<NavLink></NavLink>)
+// color: palevioletred;
+// font-weight: bold;
+// `;
+
+// render(
+// <div>
+//   <Link>Unstyled, boring Link</Link>
+//   <br />
+//   <StyledLink>Styled, exciting Link</StyledLink>
+// </div>
+// );

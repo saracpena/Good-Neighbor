@@ -33,22 +33,24 @@ function Sidebar() {
                 </SidebarInfo>
                 <CreateIcon />
             </SidebarHeader>
-            <NavLink to='/inbox'>
+            <StyledLink to='/inbox'>
             <SidebarOption Icon={InsertCommentIcon} title="Inbox"/>
-            </NavLink>
-            <NavLink to='/Search items and services'>
+            </StyledLink>
+            <StyledLink to='/search_items_services'>
             <SidebarOption Icon={InboxIcon} title="Search items and services"/>
-            </NavLink>
+            </StyledLink>
             {/* <SidebarOption Icon={DraftsIcon} title="Saved Items"/> */}
-            <NavLink to='/Saved_items'>
+            <StyledLink to='/saved_items'>
             <SidebarOption Icon={BookmarkBorderIcon} title="Saved Items"/>
-            </NavLink>
-            <SidebarOption Icon={PeopleAltIcon} title="People & User Groups"/>
+            </StyledLink>
+            <StyledLink to='/community'>
+            <SidebarOption Icon={PeopleAltIcon} title="Community"/>
+            </StyledLink>
             {/* <SidebarOption Icon={AppsIcon} title="Apps"/> */}
             {/* <SidebarOption Icon={FileCopyIcon} title="File Browser"/> */}
-            <NavLink to='/Disclaimer'>
+            <StyledLink to='/Disclaimer'>
             <SidebarOption Icon={FeedbackOutlinedIcon} title="Disclaimer"/>
-            </NavLink>
+            </StyledLink>
             <SidebarOption Icon={ExpandLessIcon} title="Show Less"/>
             <hr />
             <SidebarOption Icon={ExpandMoreIcon} title="Categories"/>
@@ -68,7 +70,7 @@ export default Sidebar
 const SidebarContainer = styled.div`
     /* background-color: var(--slack-color); */
     background-color: #db8f00;
-    color: #faebd7;
+    color: white;
     flex: 0.3;
     border-top: 1px solid #946000;
     max-width: 260px;
@@ -91,7 +93,7 @@ const SidebarHeader = styled.div`
       padding: 8px;
       color: #0000db;
       font-size: 18px;
-      background-color: #faebd7;
+      background-color: white;
       border-radius: 999px;
   }
 `;
@@ -126,4 +128,10 @@ const SidebarFooter = styled.div`
         height: 190px;
     }
 
+`;
+
+const StyledLink = styled(NavLink)`
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 `;

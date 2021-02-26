@@ -180,5 +180,8 @@ function Disclaimer() {
 export default Disclaimer;
 
 const DisclaimerContainer = styled.div`
-    margin: 0 0 0 0;
+    flex: 0.7;
+    flex-grow: 12;
+    overflow-y: scroll;
+    margin-top: 60px;
 `;

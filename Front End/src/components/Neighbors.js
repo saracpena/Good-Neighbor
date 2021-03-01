@@ -14,10 +14,10 @@ class Neighbors extends Component {
     async componentDidMount() {
 
         //if gn-backend is not working un comment line 17 and comment out line 19 and 20, it will pull the data from the fakeNeighborService
-        this.setState({neighbors: getFakeNeighbors()})
+        // this.setState({neighbors: getFakeNeighbors()})
 
-        // const { data: neighbors } = await getNeighbors();
-        // this.setState({neighbors: neighbors})
+        const { data: neighbors } = await getNeighbors();
+        this.setState({neighbors: neighbors})
     }
 
     render(){

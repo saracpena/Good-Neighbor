@@ -6,6 +6,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import axios from "axios";
 
+function createData(name, websiteURL, numSites, status, statusUpdatedAt) {
+  return { name, websiteURL, numSites, status, statusUpdatedAt };
+}
+
 function Header() {
   const [search, setSearch] = useState("");
   const [tableRows, updateTableRow] = useState([]);
@@ -18,26 +22,32 @@ function Header() {
     // const cors = "https://cors-demo.glitch.me/allow-cors";
     if (e.key === "Enter") {
 
-      const options = {
-        method: 'GET',
-        url: 'https://craigslist-search.p.rapidapi.com/q=&city&zipcode&miles',
-        params: {
-          city: 'Boston',
-          q: 'Free, FREE, Donation, Volunteer,',
-          miles: '1',
-          zipcode: '02128'
-        },
-        headers: {
-          'x-rapidapi-key': 'a3cfdb2522msh052ed764ce567ccp1b4364jsn052605a8e30d',
-          'x-rapidapi-host': 'craigslist-search.p.rapidapi.com'
-        }
+      const fetchAPI = () => {
+        axios
+          .get(
+            `https://api.offerupnow.com/api/search/v4/feed/`
+          )
+          .then((res) => {
+            const newData = [];
+            for (let i = 0; i < res.data.length; i++) {
+              newData.push(
+                createData(
+                  res.data[i].charityName,
+                  res.data[i].websiteURL,
+                  res.data[i].mailingAddress.city,
+                  res.data[i].irsClassification.deductibility,
+                  
+                )
+              );
+            }
+            updateTableRow([...newData]);
+            console.log(res.data);
+          })
+        //! This will CLEAR our input once we've created a post!
+      setSearch('');
       };
-      
-      axios.request(options).then( (response) => {
-        console.log(response.data);
-      }).catch( (error) => {
-        console.error(error);
-      });
+      fetchAPI();
+    
       //  fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})
 
       //   const fetchAPI = () => {

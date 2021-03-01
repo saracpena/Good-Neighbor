@@ -6,10 +6,6 @@ import SearchIcon from "@material-ui/icons/Search";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 import axios from "axios";
 
-function createData(name, websiteURL, numSites, status, statusUpdatedAt) {
-    return { name, websiteURL, numSites, status, statusUpdatedAt };
-  }
-
 function Header() {
   const [search, setSearch] = useState("");
   const [tableRows, updateTableRow] = useState([]);
@@ -37,9 +33,9 @@ function Header() {
         }
       };
       
-      axios.request(options).then(function (response) {
+      axios.request(options).then( (response) => {
         console.log(response.data);
-      }).catch(function (error) {
+      }).catch( (error) => {
         console.error(error);
       });
       //  fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})

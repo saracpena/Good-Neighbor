@@ -6,11 +6,8 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
 import InsertCommentIcon from '@material-ui/icons/InsertComment';
 import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import AppsIcon from '@material-ui/icons/Apps';
-import FileCopyIcon from '@material-ui/icons/FileCopy';
 import FeedbackOutlinedIcon from '@material-ui/icons/FeedbackOutlined';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -39,15 +36,12 @@ function Sidebar() {
             <StyledLink to='/search_items_services'>
             <SidebarOption Icon={InboxIcon} title="Search items and services"/>
             </StyledLink>
-            {/* <SidebarOption Icon={DraftsIcon} title="Saved Items"/> */}
             <StyledLink to='/saved_items'>
             <SidebarOption Icon={BookmarkBorderIcon} title="Saved Items"/>
             </StyledLink>
             <StyledLink to='/community'>
             <SidebarOption Icon={PeopleAltIcon} title="Community"/>
             </StyledLink>
-            {/* <SidebarOption Icon={AppsIcon} title="Apps"/> */}
-            {/* <SidebarOption Icon={FileCopyIcon} title="File Browser"/> */}
             <StyledLink to='/disclaimer'>
             <SidebarOption Icon={FeedbackOutlinedIcon} title="Disclaimer"/>
             </StyledLink>
@@ -112,12 +106,10 @@ const SidebarInfo = styled.div`
         margin-bottom: 5px;
         color: #FF851B;
     }
-
     > h2:hover{
         opactiy: 0.9;
         color: #FF4136;//#b37400 golden rod
     }
-
     >h3{
         display: flex;
         font-size: 13px;
@@ -148,18 +140,3 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-weight: normal;
 `;
-
-//! How to CSS the NavLink/Link from react-router-dom
-
-// const StyledLink = styled(Link)` or (<NavLink></NavLink>)
-// color: palevioletred;
-// font-weight: bold;
-// `;
-
-// render(
-// <div>
-//   <Link>Unstyled, boring Link</Link>
-//   <br />
-//   <StyledLink>Styled, exciting Link</StyledLink>
-// </div>
-// );

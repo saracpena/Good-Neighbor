@@ -15,7 +15,7 @@ function Header() {
   //! submit button
   const handleKeyPress = (e) => {
     console.log(e.key);
-    const cors = "https://cors-demo.glitch.me/allow-cors";
+    // const cors = "https://cors-demo.glitch.me/allow-cors";
     if (e.key === "Enter") {
 
       const options = {

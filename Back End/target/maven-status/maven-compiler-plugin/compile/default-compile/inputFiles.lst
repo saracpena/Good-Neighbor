@@ -1,0 +1,17 @@
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/CityService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/repository/NeighborRepository.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/model/Neighbor.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/GoodNeighbor.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/repository/DisclaimerRepository.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/repository/CityRepository.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/controller/DisclaimerController.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/model/Disclaimer.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/controller/NeighborController.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/ICityService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/NeighborService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/INeighborService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/DisclaimerService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/model/City.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/configuration/GoodNeighborSwagger.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/service/IDisclaimerService.java
+/Users/groovequeen/Desktop/Good-Neighbor/Back End/src/main/java/com/goodneighbor/controller/CityController.java

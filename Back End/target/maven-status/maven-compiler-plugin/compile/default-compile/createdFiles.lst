@@ -1,0 +1,17 @@
+com/goodneighbor/configuration/GoodNeighborSwagger.class
+com/goodneighbor/controller/CityController.class
+com/goodneighbor/model/City.class
+com/goodneighbor/controller/NeighborController.class
+com/goodneighbor/model/Disclaimer.class
+com/goodneighbor/model/Neighbor.class
+com/goodneighbor/repository/CityRepository.class
+com/goodneighbor/controller/DisclaimerController.class
+com/goodneighbor/service/DisclaimerService.class
+com/goodneighbor/service/NeighborService.class
+com/goodneighbor/repository/NeighborRepository.class
+com/goodneighbor/service/INeighborService.class
+com/goodneighbor/repository/DisclaimerRepository.class
+com/goodneighbor/service/IDisclaimerService.class
+com/goodneighbor/service/CityService.class
+com/goodneighbor/service/ICityService.class
+com/goodneighbor/GoodNeighbor.class

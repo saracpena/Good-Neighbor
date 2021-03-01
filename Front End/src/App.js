@@ -5,17 +5,16 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import styled from 'styled-components'
 import Chat from './components/Chat';
+import Disclaimer from './components/Disclaimer'
+import Neighbors from './components/Neighbors'
 import Login from './components/Login';
-import Disclaimer from './components/Disclaimer';
 
 function App() {
   
   return (
     <div className="app">
-      
       <Router>
         {/* <Login/> */}
-          <>
         <Header />
         <AppBody>
           <Sidebar  />
@@ -23,13 +22,15 @@ function App() {
           <Route exact path="/">
             <Chat/>
           </Route>
+          <Route exact path="/community">
+            <Neighbors/>    
+          </Route>
           <Route exact path="/disclaimer">
             <Disclaimer/>
           </Route>
         </Switch>
         </AppBody>
-      </>   
-    </Router>
+      </Router>
     </div>
   );
 }

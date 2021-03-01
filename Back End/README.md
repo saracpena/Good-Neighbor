@@ -33,3 +33,5 @@ http://localhost:8080/actuator/info
 </p>
 
 http://localhost:8080/swagger-ui.html
+
+<!-- https://projectlombok.org/ -->

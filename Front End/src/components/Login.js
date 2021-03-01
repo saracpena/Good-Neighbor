@@ -11,10 +11,17 @@ function Login() {
           <h2>Good Neighbor,</h2><br/>
           <p>is a volunteer-based community where neighbors help neighbors in need.<br/>Please note that due to limited resources, we are only able to serve <strong>East Boston</strong> at this time.</p><br/>
           <h4>eastie.goodneighbor</h4>
+          <br/>
+          <form>
+            <input value='' placeholder='Email' type='email'/>
+            <input value='' placeholder='Password' type='password'/>
+          </form>
           <Button onClick=''>
             Sign in
           </Button>
+          <br/>
           <hr/>
+          <br/>
           <p>Not a member? Sign-up.</p>
         </LoginInnerContainer>  
       </LoginContainer>
@@ -41,12 +48,26 @@ const LoginInnerContainer = styled.div`
         height: 180px;
         margin-bottom: 40px;
     }
-    > button {
-        margin-top: 50px;
+    >form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    >form > input {
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: .9;
+ }
+  > Button {
+        margin-top: 10px;
         text-transform: inherit !important;
         background-color: #db8f00;
         color: white;
-    }
+  }
 
     > hr {
         margin-top: 20px;

@@ -10,11 +10,11 @@
 • 3rd Party APIs - Swagger • Project Lombok 
 
 ## Prototype 1
-![PhotoApp](https://media.giphy.com/media/MNEZVtoMiyvtX0PHdv/giphy.gif)
+![GoodNeighbor-PT](https://media.giphy.com/media/ghLb47qnf919g7RDP9/giphy.gif)
 
 ## MVP Release
 
-![SocialMediaAppFinal](https://media.giphy.com/media/xFaYzxQHPBTY9e3eut/giphy.gif)
+![GoodNeighbor-MVP](https://media.giphy.com/media/xFaYzxQHPBTY9e3eut/giphy.gif)
 ### Technologies Used
 
     • Front End
@@ -23,7 +23,7 @@
         • HTML      • Styled Components     • Swagger (APIs)
 
     • Back End
-        • Java          • MVC - Model View Controller
+        • PostgreSQL    • MVC - Model View Controller   • JAVA
         • Spring Boot   • 3rd Party APIs - Swagger 
         • Maven         • Project Lombok
 # Deployed using AWS & Heroku

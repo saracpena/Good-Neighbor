@@ -25,7 +25,7 @@ function Sidebar() {
                 <h2>Good Neighbor, East Boston</h2>
                 <h3>
                     <FiberManualRecordIcon/>
-                    Sara Peña
+                    User
                 </h3>
                 </SidebarInfo>
                 <CreateIcon />

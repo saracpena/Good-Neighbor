@@ -24,3 +24,4 @@ public class Disclaimer {
     private String header;
     private String body;
 }
+// my model with all the desired info for rendering

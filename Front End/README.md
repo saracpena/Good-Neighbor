@@ -1,16 +1,3 @@
-# Material UI
-# Styled-Components 
-    - https://styled-components.com/ - npm install --save styled-components 
-    -   "resolutions": {
-        "styled-components": "^5"
-        }
-# ReactJS
-# Redux
-# MySQL
-# Java
-# Spring Boot/Maven
-##
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,9 +1,9 @@
 # Good-Neighbor
 ## User Stories
 ### Helper & Beneficiary
-#### Good neighbor was created to bring the community together especially in a time of crisis like the ongoing pandemic. Due to limited resources, we are only able to serve the city and neighborhoods of East Boston, MA 02128. At Good Neighbor, users are able to post their needs, items, or can volunteer their time to assist a neighbor in need (i.e. offer to pick-up/drop-off needed items).
+#### Good Neighbor is a platform where neighbors unite to care for one another and their community especially during a time like COVID-19. Due to limited resources, we are only able to serve the city and neighborhoods of East Boston, MA 02128. At Good Neighbor, users are able to post their needs, list free items or volunteer their time to assist a neighbor in need (i.e. offer to pick-up/drop-off items or shovel someone's driveway etc.).
 
-#### The Community section allows you to view your nearby neighbors. Direct messaging is available for seamless communication. The search items section allow you to browse items/services from your neighbor. Saved items stores items/services of interest. Please refer to our Disclaimer section for use of website. 
+#### The 'Community' section allows you to view your nearby neighbors. Direct messaging is available for seamless communication via 'Inbox'. The 'Search items and services' section allows you to browse items/services posted by a neighbor. 'Saved items' stores items/services of interest. Please refer to our Disclaimer section for proper use of this website.
 ## Prototype 1
 ![GoodNeighbor-PT](https://media.giphy.com/media/ghLb47qnf919g7RDP9/giphy.gif)
 

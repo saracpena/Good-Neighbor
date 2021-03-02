@@ -28,6 +28,8 @@ https://agoodneighbor.herokuapp.com/
         https://web.dev/cross-origin-resource-sharing/
         • fetch('https://cors-demo.glitch.me/', {mode:'cors'})
         • fetch('https://cors-demo.glitch.me/allow-cors', {mode:'cors'})
+
+    • Heroku Deployment does not render backend? i.e. Community DB
 ### Backlog Items
     • Login Auth
     • Register Auth

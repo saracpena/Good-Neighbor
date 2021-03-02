@@ -18,6 +18,5 @@ public class DisclaimerService implements IDisclaimerService {
     public List<Disclaimer> findAll() {
 
         return (List<Disclaimer>) repository.findAll();
-        repository.
     }
 }

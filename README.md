@@ -3,6 +3,6 @@
 #### The Community section allows you to view your nearby neighbors. Direct messaging is available for seamless communication. The search items section allow you to browse items/services from your neighbor. Saved items stores items/services of interest. Please refer to our Disclaimer section for use of website.  
 ### Front End
 #### Technologies Used: 
-#### • javaScript ES6 #### • javaScript ES6 #### • javaScript ES6 
+• javaScript ES6  • javaScript ES6 • javaScript ES6 
 #### • javaScript ES6 #### • javaScript ES6 #### • javaScript ES6
 

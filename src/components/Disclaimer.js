@@ -7,9 +7,9 @@ export class Disclaimer extends Component {
   state = {
     disclaimers: [],
   }
-
+// once I mount this component I want to render disclaimer and display it
   async componentDidMount() {
-
+// when the component mounts I will get the following data
     const { data: disclaimers } = await getDisclaimers();
     console.log(disclaimers)
     this.setState({disclaimers: disclaimers})

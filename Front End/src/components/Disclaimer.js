@@ -25,7 +25,7 @@ export class Disclaimer extends Component {
        {disclaimers && disclaimers.map(disclaimer => (
           <h1>{disclaimer.header}</h1>
         ))}
-        <p>Last updated: February 15, 2021</p>
+        {/* <p>Last updated: February 15, 2021</p> */}
         <h1>Interpretation and Definitions</h1>
         <h2>Interpretation</h2>
         {disclaimers && disclaimers.map(disclaimer => (
@@ -202,4 +202,21 @@ const DisclaimerContainer = styled.div`
     flex-grow: 2;
     overflow-y: scroll;
     margin-top: 60px;
+    align-items: center;
+    padding: 20px;
+
+    >h1{
+      color: #0074D9;
+    }
+
+    >h2 {
+      color: darkblue;
+    }
+
+    > p, ul{
+    color: gray;
+    font-weight: 350;
+    margin-left: 4px;
+    font-size: 15px;
+  }
 `;

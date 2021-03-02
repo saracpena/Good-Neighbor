@@ -30,9 +30,7 @@ function Sidebar() {
                 </SidebarInfo>
                 <CreateIcon />
             </SidebarHeader>
-            <StyledLink to='/inbox'>
-            <SidebarOption Icon={InsertCommentIcon} title="Inbox"/>
-            </StyledLink>
+        
             <StyledLink to='/search_items_services'>
             <SidebarOption Icon={InboxIcon} title="Search items and services"/>
             </StyledLink>
@@ -41,6 +39,9 @@ function Sidebar() {
             </StyledLink>
             <StyledLink to='/community'>
             <SidebarOption Icon={PeopleAltIcon} title="Community"/>
+            </StyledLink>
+            <StyledLink to='/inbox'>
+            <SidebarOption Icon={InsertCommentIcon} title="Inbox"/>
             </StyledLink>
             <StyledLink to='/disclaimer'>
             <SidebarOption Icon={FeedbackOutlinedIcon} title="Disclaimer"/>
@@ -128,7 +129,8 @@ const SidebarFooter = styled.div`
 
     > img {
         object-fit: contain;
-        margin-top: 140px;
+        margin: 0;
+        margin-top: 300px;
         margin-left: 0;
         height: 190px;
     }

@@ -22,10 +22,10 @@ function App() {
           <Route exact path="/">
             <Chat/>
           </Route>
-          <Route exact path="/community">
+          <Route path="/community">
             <Neighbors/>    
           </Route>
-          <Route exact path="/disclaimer">
+          <Route path="/disclaimer">
             <Disclaimer/>
           </Route>
         </Switch>

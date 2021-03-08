@@ -22,8 +22,10 @@ export class Disclaimer extends Component {
     return (
      
       <DisclaimerContainer>
+        {/* if disclaimer is not NULL or undefined then iterate through disclimaers because it is an array */}
        {disclaimers && disclaimers.map(disclaimer => (
           <h1>{disclaimer.header}</h1>
+          // <h1>This is the header, WOW!</h1>
         ))}
         {/* <p>Last updated: February 15, 2021</p> */}
         <h1>Interpretation and Definitions</h1>
